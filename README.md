@@ -1,264 +1,74 @@
-# Jekyll blog theme
+# [Start Bootstrap - Freelancer](https://startbootstrap.com/template-overviews/freelancer/)
 
-Simple and nice blog theme based on Inclusion framework.
+[Freelancer](http://startbootstrap.com/template-overviews/freelancer/) is a one page freelancer portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, and a working PHP contact form.
 
-Proudly built with [Jekyll](http://jekyllrb.com/) and [Grunt](http://gruntjs.com/), hosted on [Github](https://github.com).
-Compatible browsers: IE8+, Firefox, Chrome, Opera, Yandex.browser, Safari
+## Preview
 
-Check out [quick demo](http://website-templates.github.io/jekyll-inclusion/) of this theme
+[![Freelancer Preview](https://startbootstrap.com/assets/img/templates/freelancer.jpg)](https://blackrockdigital.github.io/startbootstrap-freelancer/)
 
----
+**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-freelancer/)**
 
-##Contents
-* [Requirements](#requirements)
-* [Structure](#structure)
-* [Development and blogging](#development-and-blogging)
-	- [Editorconfig](#editorconfig)
-	- [Grunt tasks](#grunt-tasks)
-	- [Data driven nav](#data-driven-nav)
-	- [Post creation](#post-creation)
-* [Changelog](#changelog)
-* [Credits](#credits)
-* [License](#license)
+## Status
 
-## Requirements:
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-freelancer/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/startbootstrap-freelancer.svg)](https://www.npmjs.com/package/startbootstrap-freelancer)
+[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-freelancer.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-freelancer)
+[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-freelancer/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-freelancer)
+[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-freelancer/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-freelancer?type=dev)
 
-- [Ruby](http://www.ruby-lang.org/)
-- [Node.js](http://nodejs.org/)
-- [Grunt](http://gruntjs.com/) (`npm install -g grunt-cli`)
-- [Bower](http://bower.io/) (`npm install -g bower`)
-- [Python](http://www.python.org/) with [pip](http://www.pip-installer.org/)
+## Download and Installation
 
-## Structure
-There are two branches: master branch and gh-pages. Master is a main develop branch.
-Project based on [Synteagle general project template](https://github.com/synteagle/se-general-template)
-```
-./
-├── .editorconfig
-├── Gruntfile.js
-├── package.json
-├── bower.json
-├── README.md
-├── CHANGELOG.md
-├── Rakefile
-├── Gemfile
-├── _config.yml
-├── post.sh
-├──grunt/                                      * grunt tasks
-|   ├── task.js
-│   └── aliases.yml 
-|
-├── dev/                                       * site source
-|   ├── coffee/                                * coffee scripts
-|	│   └── main/                              * main scripts
-|	│
-│   ├── images/                                * image sources
-|	│
-│   ├── jade/                                  * templates
-|	|	├── blocks/                            * blocks library
-|	│   |   └── block.jade
-|	│   ├── helpers/                           * helper mixins
-|	│   ├── vendor/                            * third-party code
-|	│   ├── layouts/                           * page layouts
-|	│   └── pages/                             * main pages templates
-|	│
-│   ├── js/                                    * compiled and source js
-|	|   ├── main/                              * main site scripts
-|	│   ├── ie/                                * ie compat scripts
-|	│   └── vendor/                            * vendor scripts
-|	│
-|	├── sass/                                  * sass preprocessor styles
-|	|	├── blocks/                            * blocks library
-|	│   |   └── block.sass
-|	│   ├── helpers/                           * mixins and vars
-|	│   ├── vendor/                            * third-party code
-|	│   └── screen.sass
-|	│
-│   ├── ruby/                                  * jekyll plugins
-|	│
-│   ├── helpers/                               * helper files
-|	│
-│   ├── fonts/                                 * font sources
-|	│
-│   └── devtools/                              * some dev tools
-│
-├── build/                                     * built source
-|	├── index.html
-|	├── _data/                                 * jekyll data (i18n, locales)
-|	|
-|	├── _drafts/                               * drafts
-|	|
-|	├── _layouts/                              * layouts for jekyll generation
-|	|
-|	├── _plugins/                              * jekyll plugins
-|	|
-|	├── _posts/                                * posts (*.md)
-|	|
-|	└── static/                                * static assets
-|		├── css/                               * minified styles
-|		|
-|		├── images/                            * minified images
-|		│
-|		├── js/                                * minified assembled js
-|		|
-|		└── fonts/                             * @font-face-ready webfonts
-│
-└── publ/                                      * generated website
-	├── _data/                                 * jekyll data (i18n, locales)
-	|
-	├── _drafts/                               * drafts
-	|
-	├── _posts/                                * posts (*.md)
-	|
-	└── static/                                * static assets
-		└── images/                            * post and pages images
+To begin using this template, choose one of the following options to get started:
+* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/freelancer/)
+* Install via npm: `npm i startbootstrap-freelancer`
+* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-freelancer.git`
+* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-freelancer)
 
-```
+## Usage
 
-Take a look at [this article](http://www.aymerick.com/2014/07/22/jekyll-github-pages-bower-bootstrap.html) about creating dev and deploy branches for your blog. 
+### Basic Usage
 
-NOTE: this example use in _config.yml use baseurl option, so after domain there is path: /jekyll-inclusion. If you want to run this example on the local machine you should comment or remove this line in _config.yml file.
+After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
 
-## Development and blogging
+### Advanced Usage
 
-### Editorconfig
-This project contains .editorconfig file. It describes codestyle like indentation, trailing whitespaces etc. See more details [here](http://editorconfig.org/) 
+After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
 
-### Grunt tasks
-Here comes groups of grunt tasks with some explanations
+#### Gulp Tasks
 
-#### Start 
-`grunt start` - Install bower dependencies and place them to dev folders
-```
-- 'shell:bower'                          Install bower components
-- 'bower:ie'                             Copy ie components to js folder
-- 'bower:vendor'                         Copy vendor  components to js folder
-```
+- `gulp` the default task that builds everything
+- `gulp dev` browserSync opens the project in your default browser and live reloads when changes are made
+- `gulp css` compiles SCSS files into CSS and minifies the compiled CSS
+- `gulp js` minifies the themes JS file
+- `gulp vendor` copies dependencies from node_modules to the vendor directory
 
-#### Dev
-`gulp dev` - Dev task with static server
-```
-- 'coffee:main'                          Compile main coffescripts
-- 'concat:main'                          Concatenate main javascripts
-- 'concat:ie'                            Concatenate ie javascripts
-- 'concat:vendor'                        Concatenate vendor javascripts
-- 'sass'                                 Compile Sass stylesheets
-- 'jade'                                 Compile Jade templates
-- 'sync:imagesDev'                       Sync images
-- 'sync:fontsDev'                        Sync fonts
-- 'sync:helpersDev'                      Sync helpers and other assets
-- 'sync:rubyDev'                         Sync jekyll plugins
-- 'sync:mainPubl'                        Sync posts and pages from publ folder
-- 'shell:jekyllBuild'                    Generate site using Jekyll.rb
-- 'browserSync:dev'                      Run dev server with watch option
-- 'watch:dev'                            Watch for changes and run dev task
-```
+You must have npm and Gulp installed globally on your machine in order to use these features.
 
-#### Build 
-`grunt build` - Build task
-```
-- 'shell:jekyllBuild'                    Generate site using Jekyll.rb
-- 'imagemin'                             Minify images
-- 'cmq'                                  Combine media queries in css files
-- 'autoprefixer'                         Add vendor prefixes in css
-- 'csscomb'                              Applie styleguide to stylesheets
-- 'uglify'                               Minify javascript files
-- 'csso'                                 Minify stylesheets
-- 'processhtml'                          Replace assets paths in html
-- 'htmlmin'                              Minify html
-- 'clean:dev'                            Remove dev things
-- 'browserSync:test'                     Run test server without watch
-```
+## Troubleshooting and Help
 
-#### Rebuild 
-`grunt rebuild` - Regenerate and build project by running all tasks
-```
-- 'coffee:main'                          Compile main coffescripts
-- 'concat:main'                          Concatenate main javascripts
-- 'concat:ie'                            Concatenate ie javascripts
-- 'concat:vendor'                        Concatenate vendor javascripts
-- 'sass'                                 Compile Sass stylesheets
-- 'jade'                                 Compile Jade templates
-- 'sync:imagesDev'                       Sync images
-- 'sync:fontsDev'                        Sync fonts
-- 'sync:helpersDev'                      Sync helpers and other assets
-- 'sync:rubyDev'                         Sync jekyll plugins
-- 'sync:mainPubl'                        Sync posts and pages from publ folder
-- 'shell:jekyllBuild'                    Generate site using Jekyll.rb
-- 'imagemin'                             Minify images
-- 'cmq'                                  Combine media queries in css files
-- 'autoprefixer'                         Add vendor prefixes in css
-- 'csscomb'                              Applie styleguide to stylesheets
-- 'uglify'                               Minify javascript files
-- 'csso'                                 Minify stylesheets
-- 'processhtml'                          Replace assets paths in html
-- 'htmlmin'                              Minify html
-- 'clean:dev'                            Remove dev things
-```
+Start Bootstrap has a public Slack channel which is a great place to ask questions about this template and all things related to Start Bootstrap.
 
-#### Theme
-`grunt theme` - Theme styles and scripts fixing
-```
-- 'coffee:main'                          Compile main coffescripts
-- 'concat:main'                          Concatenate main javascripts
-- 'concat:ie'                            Concatenate ie javascripts
-- 'concat:vendor'                        Concatenate vendor javascripts
-- 'sass'                                 Compile Sass stylesheets
-- 'sync:cssTheme'                        Sync css with Jekyll generated assets
-- 'sync:jsTheme'                         Sync js with Jekyll generated assets
-- 'browserSync:theme'                    Run dev server with watch option
-- 'watch:theme'                          Watch for changes and run theme task
-```
+**[Click here to join the Slack channel!](https://startbootstrap-slack.herokuapp.com/)**
 
-#### Template
-`grunt template` - Theme templates fixing
-```
-- 'jade'                                 Compile Jade templates
-- 'shell:jekyllBuild'                    Generate site using Jekyll.rb
-```
+## Bugs and Issues
 
-#### Publish
-`grunt publish` - Copy posts, pages and images and generates website
-```
-- 'sync:mainPubl'                        Copy posts, pages and images
-- 'shell:jekyllBuild'                    Generate site using Jekyll.rb
-- 'processhtml'                          Replace assets paths in html
-- 'htmlmin'                              Minify html
-- 'clean:dev'                            Remove dev things
-```
+Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-freelancer/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/freelancer/).
 
-#### Deploy 
-`grunt deploy` - Deploy project by running Rakefile: git or ftp push
-```
-- 'shell:deploy'                         Deploy generated site to gh-pahes
-```
+## About
 
-#### Server 
-`grunt server` - Run server without watching for changes
-```
-- 'browserSync:test'                     Run test server without watch
-```
+Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
 
-### Data driven nav
-This theme use special data from _data/nav.yml to generate navigation. It's useful when you need to create nested menu. Also each page have menu option and if it will turn to true - this page will appear in menu.
+* https://startbootstrap.com
+* https://twitter.com/SBootstrap
 
-### Post creation
-There is a [simple bash script](https://gist.github.com/orlovmax/f1b73a5fd01fc4b917c2) that allows us to create new posts. I've put it in the root of the website, so just execute it, like `bash post.sh your-post-name` or `post.sh your-post-name` and it will create new *.md file at `_publ/pages/_posts` with predefined draft layout from `_draft` directory and also it will create folder in `_publ/img/posts/` with name `your-post-name` for your post images. It's pretty simple and useful.
+Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
 
-## Changelog
-Youc can find full changelog [HERE](https://github.com/website-templates/jekyll-inclusion/blob/master/CHANGELOG.md)
+* http://davidmiller.io
+* https://twitter.com/davidmillerskt
+* https://github.com/davidtmiller
 
-## Credits
-* [JADE bemto mixin](https://github.com/kizu/bemto)
-* [Lazy load plugin](http://www.appelsiini.net/projects/lazyload)
-* [Intense Image Viewer](http://tholman.com/intense-images/)
-* [Prism syntax highlighter](http://prismjs.com/download.html) 
-* [Detect Mobile Browsers](http://detectmobilebrowsers.com/)
-* [Clean blog jekyll theme](https://github.com/IronSummitMedia/startbootstrap-clean-blog-jekyll)
-* [Strip.rb - strip newlines after for loop](https://github.com/aucor/jekyll-plugins)
-* [Tag pages generator](https://github.com/ilyakhokhryakov/jekyll-tagging-pagination)
-* [Tag and Category pages pagination](https://github.com/realjenius/realjenius.com/blob/master/_plugins/cat_and_tag_generator.rb)
-* [Jekyll i18n filter](https://github.com/gacha/gacha.id.lv/blob/master/_plugins/i18n_filter.rb)
+Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
-## License
-[MIT](http://opensource.org/licenses/MIT)
+## Copyright and License
+
+Copyright 2013-2018 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/gh-pages/LICENSE) license.
