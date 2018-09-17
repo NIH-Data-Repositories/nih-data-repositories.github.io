@@ -382,3 +382,17 @@ a:focus, a:hover, a:active {
   background-color: #1a252f;
   border-color: #1a252f;
 }
+
+.repo-row {
+  display: flex;
+}
+
+.repo-row:first-child {
+  width: 30%;
+}
+
+.repo-row table td:first-child {
+  width: 30%;
+  text-align: right;
+  font-weight: 700;
+}
