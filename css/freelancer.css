@@ -415,5 +415,10 @@ a:focus, a:hover, a:active {
 }
 
 .repo-row ul {
-  padding-left: 1em;
+  padding-left: 2.5em;
+  margin-top: -1em;
+}
+
+.portfolio h4 {
+  text-align: center;
 }
