@@ -387,11 +387,11 @@ a:focus, a:hover, a:active {
   display: flex;
 }
 
-.repo-row:first-child {
+.repo-row div:first-child {
   width: 30%;
 }
 
-.repo-row table td:first-child {
+.repo-row table tr td:first-child {
   width: 30%;
   text-align: right;
   font-weight: 700;
