@@ -411,3 +411,7 @@ a:focus, a:hover, a:active {
 .repo-row table tr td {
   vertical-align: top;
 }
+
+.repo-row ul {
+  padding-left: 1em;
+}
