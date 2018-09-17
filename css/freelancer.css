@@ -385,10 +385,20 @@ a:focus, a:hover, a:active {
 
 .repo-row {
   display: flex;
+  justify-content: space-between;
 }
 
 .repo-row div:first-child {
-  width: 30%;
+  width: 40%;
+}
+
+.repo-row div:last-child {
+  width: 58%;
+}
+
+.repo-row div:first-child img {
+  width: 100%;
+  height: auto;
 }
 
 .repo-row table tr td:first-child {
