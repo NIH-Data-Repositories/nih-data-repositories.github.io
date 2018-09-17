@@ -386,6 +386,9 @@ a:focus, a:hover, a:active {
 .repo-row {
   display: flex;
   justify-content: space-between;
+  border-bottom: solid 1px #00408521;
+  margin-bottom: 2.5em;
+  padding-bottom: 1.5em;
 }
 
 .repo-row div:first-child {
